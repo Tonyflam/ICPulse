@@ -31,10 +31,6 @@ app.get("/", schema);
 
 app.post("/execute_command", createCommandChatClient(factory), executeCommand);
 
-app.listen(PORT, "0.0.0.0", () => {
+app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
-
-
-const workspaceUrl = process.env.GITPOD_WORKSPACE_URL?.replace('://', `://${PORT}-`);
-console.log(`Public URL: ${workspaceUrl}`);
