@@ -425,7 +425,84 @@ export default function schema(_: Request, res: Response) {
           },
         ],
       },
-      
+      {
+        name: "subnet_lookup",
+        description: "Fetches information about a specific subnet.",
+        placeholder: "Fetching subnet information...",
+        default_role: "Participant",
+        permissions: Permissions.encodePermissions({
+          ...emptyPermissions,
+          message: ["Text"],
+        }),
+        params: [
+          {
+            name: "subnet_id",
+            required: true,
+            description: "The ID of the subnet to fetch information for.",
+            placeholder: "Enter subnet ID...",
+            param_type: {
+              StringParam: {
+                min_length: 1,
+                max_length: 100,
+                choices: [],
+                multi_line: false,
+              },
+            },
+          }
+        ],
+      },
+      {
+        name: "neuron_health_check",
+        description: "Performs a health check on a specific neuron.",
+        placeholder: "Performing neuron health check...",
+        default_role: "Participant",
+        permissions: Permissions.encodePermissions({
+          ...emptyPermissions,
+          message: ["Text"],
+        }),
+        params: [
+          {
+            name: "neuron_id",
+            required: true,
+            description: "The ID of the neuron to check.",
+            placeholder: "Enter neuron ID...",
+            param_type: {
+              StringParam: {
+                min_length: 1,
+                max_length: 100,
+                choices: [],
+                multi_line: false,
+              },
+            },
+          }
+        ],
+      },
+      {
+        name: "icp_faq",
+        description: "Provides answers to frequently asked questions about ICP.",
+        placeholder: "Fetching FAQ...",
+        default_role: "Participant",
+        permissions: Permissions.encodePermissions({
+          ...emptyPermissions,
+          message: ["Text"],
+        }),
+        params: [
+          {
+            name: "category",
+            required: false,
+            description: "The FAQ category to fetch (e.g., 'general', 'governance', 'sns', 'neurons', 'resources').",
+            placeholder: "Enter FAQ category...",
+            param_type: {
+              StringParam: {
+                min_length: 1,
+                max_length: 100,
+                choices: [],
+                multi_line: false,
+              },
+            },
+          }
+        ],
+      },
     ],
   });
 }
