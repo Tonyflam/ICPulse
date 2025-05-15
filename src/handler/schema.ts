@@ -437,9 +437,9 @@ export default function schema(_: Request, res: Response) {
         ],
       },
       {
-        name: "icp_faq",
+        name: "FAQ",
         description: "Provides answers to frequently asked questions about ICP.",
-        placeholder: "Choose a FAQ category...",
+        placeholder: "ICPulse is Fecthing FAQ...",
         default_role: "Participant",
         permissions: Permissions.encodePermissions({
           ...emptyPermissions,
