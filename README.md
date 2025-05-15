@@ -1,131 +1,222 @@
 # ⚡ ICPulse - The Intelligent Internet Computer Command Center ⚡
 
-ICPulse is your all-in-one AI-powered dashboard for the Internet Computer ecosystem. Monitor real-time network vitals, automate governance insights, analyze on-chain activity, and manage neuron voting with advanced analytics. Whether you're a developer, node operator, or governance participant, ICPulse gives you the tools to operate at blockchain speed.
-
-**Category**: Productivity & Utility  
-**Platform**: OpenChat  
+Your AI-powered dashboard for everything ICP. Monitor real-time network vitals, automate governance decisions, and analyze on-chain data with cutting-edge AI insights. Built for developers, node operators, and governance participants who demand precision at blockchain speed.
 
 ---
 
-## 🚀 Features Overview
+## ✨ Command Categories ✨
 
-ICPulse integrates deeply with Internet Computer APIs to provide real-time insights and intelligent tools across five categories:
+### 🌐 NETWORK COMMANDS
+_Network monitoring commands: status, visualization, and analytics_
 
-### ✨ Command Categories
+**💓 /network network_status**  
+ICP Network Status  
+TPS, node health, memory usage  
+`/network network_status`
 
-#### 🌐 LIVE NETWORK MONITORING
-_Real-time intelligence and infrastructure health._
+**🗺️ /network node_map**  
+Global ICP nodes visualization  
+Interactive map of node locations  
+`/network node_map`
 
-- `/network_status` – Network pulse: TPS, memory, subnet status  
-- `/node_map` – Global node distribution (interactive map)  
-- `/subnet_versions` – Replica version tracking  
-- `/node_providers` – Node providers by organization  
-- `/energy_stats` – ICP vs traditional blockchains (energy usage)  
+**🔄 /network subnet_versions**  
+Subnet Replica version tracking  
+Track versions across subnets  
+`/network subnet_versions`
 
-#### 🤖 AI-POWERED GOVERNANCE
-_Smart summaries and deep insights to support informed voting._
+**🏢 /network node_providers**  
+ICP Node Providers distribution  
+Breakdown by provider organization  
+`/network node_providers`
 
-- `/daily_report` – AI-curated daily digest of proposals 🧠  
-- `/summarize_proposal [ID]` – Deep AI analysis of any proposal  
-- `/proposals` – Browse all governance proposals  
-- `/proposal_stats [ID]` – Voting power and participation breakdown  
+**🌱 /network energy_stats**  
+ICP Energy efficiency report  
+Energy consumption metrics  
+`/network energy_stats`
 
-#### 💰 TOKEN COMMAND CENTER
-_Market intelligence and tokenomics._
-
-- `/icp_price` – Live ICP/USD + ICP/XDR price  
-- `/btc_price` – Live ckBTC/USD with peg info  
-- `/icp_supply` – Circulating + total ICP supply  
-- `/cycles_calc [ICP]` – Convert ICP → Cycles (USD adjusted)  
-- `/icp_stats` – On-chain ICP stats (burn, volume, etc.)  
-
-#### 🧠 NEURON MANAGEMENT
-_Optimize and assess neuron participation._
-
-- `/neuron_info [ID]` – Neuron voting power, age bonus, dissolve delay  
-- `/neuron_health_check [ID]` – Full neuron diagnostics  
-- `/maturity_modulation` – View current rewards multiplier  
-
-#### ⚙️ DEVELOPER TOOLS
-_Powerful utilities for canisters, subnets, and identity insights._
-
-- `/canister_search [ID]` – Status, controllers, module hash  
-- `/canister_growth` – Historical deployment metrics  
-- `/subnet_lookup [ID]` – Details for any subnet  
-- `/ii_users` – Internet Identity adoption stats  
-
-#### 🌱 SNS ECOSYSTEM
-_Explore decentralized SNS DAOs and token distributions._
-
-- `/sns_list` – Directory of live SNS DAOs  
-- `/sns_proposals [SNS ID]` – Active proposals in an SNS  
-- `/icrc_supply [SNS ID]` – ICRC token supply (ckETH, etc.)  
-- `/icrc_holders [SNS ID]` – Top token holders  
-
-#### 📊 COMPARATIVE ANALYTICS
-_Side-by-side benchmarking._
-
-- `/icp_vs_eth` – Compare TPS, energy, and fees with Ethereum  
-
-#### 📚 FAQ & RESOURCES
-- `/faq [category]` – Common ICP questions & resources  
+**🔍 /network subnet_lookup**  
+Subnet details lookup  
+Get detailed subnet information  
+`/network subnet_lookup [subnet_id]`
 
 ---
 
-## 🔍 Quick Reference
+### 🏛️ GOVERNANCE COMMANDS
+_Governance-related commands: proposals, AI analysis, and voting tools_
 
-| Category            | Sample Commands                                  |
-|---------------------|-------------------------------------------------|
-| Network Monitoring  | `/network_status`, `/node_map`, `/energy_stats` |
-| Governance Tools    | `/daily_report`, `/proposals`, `/summarize_proposal 12345` |
-| Token Data          | `/icp_price`, `/btc_price`, `/cycles_calc 10`   |
-| Neuron Management   | `/neuron_info 123456789`, `/maturity_modulation` |
-| Developer Tools     | `/canister_search xyzzy-12345`, `/subnet_lookup subnet_id` |
-| SNS Tools           | `/sns_list`, `/icrc_holders abcde-67890`        |
-| Analytics           | `/icp_vs_eth`, `/icp_stats`                     |
+**🗳️ /governance proposals**  
+List active proposals  
+Browse governance proposals  
+`/governance proposals`
+
+**📰 /governance daily_report**  
+Daily Governance Report  
+AI-curated summary of proposals  
+`/governance daily_report`  
+🤖 AI-Powered
+
+**🔍 /governance summarize_proposal**  
+Summarize a proposal  
+AI analysis of proposal content  
+`/governance summarize_proposal [proposal_id]`  
+🤖 AI-Powered
+
+**📊 /governance proposal_stats**  
+Proposal Statistics  
+Voting analytics and metrics  
+`/governance proposal_stats [proposal_id]`
 
 ---
 
-### ⚙️ Installation Guide
-**Clone the repository**
+### 💰 TOKEN COMMANDS
+_Token management commands: prices, supply, and conversions_
+
+**📈 /tokens icp_price**  
+Real-time ICP price  
+Current ICP/USD and ICP/XDR rates  
+`/tokens icp_price`
+
+**₿ /tokens ckbtc_price**  
+ckBTC/USD price  
+Current ckBTC exchange rate  
+`/tokens ckbtc_price`
+
+**🔄 /tokens icp_supply**  
+ICP Circulating supply  
+Current supply metrics  
+`/tokens icp_supply`
+
+**🧮 /tokens cycles_calc**  
+ICP to Cycles converter  
+Convert ICP amount to cycles  
+`/tokens cycles_calc [amount]`
+
+**📊 /tokens icrc_supply**  
+ICRC token supply  
+Check supply of ICRC tokens  
+`/tokens icrc_supply [ledger_id]`
+
+**👛 /tokens icrc_holders**  
+ICRC Top wallets  
+View top token holders  
+`/tokens icrc_holders [ledger_id]`
+
+---
+
+### 🧠 NEURON COMMANDS
+_Neuron management commands: info, rewards, and health checks_
+
+**🧬 /neurons neuron_info**  
+Neuron Voting power/status  
+Detailed neuron information  
+`/neurons neuron_info [neuron_id]`
+
+**⚡ /neurons maturity_modulation**  
+Current ICP maturity modulation  
+Rewards multiplier status  
+`/neurons maturity_modulation`
+
+**🧠 /neurons neuron_health_check**  
+Neuron health audit  
+Health check and recommendations  
+`/neurons neuron_health_check [neuron_id]`
+
+---
+
+### 🛠️ DEVELOPER COMMANDS
+_Developer tools: canister forensics, deployment trends, and II stats_
+
+**🔎 /dev canister_search**  
+Find Canister Info  
+Canister details and metadata  
+`/dev canister_search [canister_id]`
+
+**📈 /dev canister_growth**  
+Canister Growth Statistics  
+Historical growth metrics  
+`/dev canister_growth`
+
+**👤 /dev ii_users**  
+Internet Identity stats  
+User growth and metrics  
+`/dev ii_users`
+
+---
+
+### 🌱 SNS COMMANDS
+_SNS-related commands: list DAOs, proposals, and documentation_
+
+**📋 /sns sns_list**  
+List all live SNS DAOs  
+Active DAOs with basic info  
+`/sns sns_list`
+
+**🗳️ /sns sns_proposals**  
+Get DAO proposals  
+View proposals for a specific DAO  
+`/sns sns_proposals [sns_id]`
+
+---
+
+### 📊 ANALYTICS COMMANDS
+_Comparative insights: Ethereum metrics and chain activity trends_
+
+**⚖️ /analytics icp_vs_eth**  
+ICP vs Ethereum metrics  
+Comparative blockchain metrics  
+`/analytics icp_vs_eth`
+
+**📈 /analytics icp_stats**  
+Chain activity trends  
+ICP network statistics  
+`/analytics icp_stats`
+
+---
+
+### ❓ FAQ COMMANDS
+_Frequently asked questions about ICP_
+
+**❓ /icp_faq**  
+ICP Frequently Asked Questions  
+Answers to common questions  
+`/icp_faq [category]`  
+Categories: general, governance, sns, neurons, resources
+
+---
+
+### 🛠️ UTILITY COMMANDS
+_General utility commands_
+
+**ℹ️ /help**  
+Show this help message  
+Display all available commands  
+`/help`
+
+---
+
+## 💡 Usage Notes:
+- Commands with `[parameter]` require input (e.g., `/neurons neuron_info 12345`)
+- AI-powered commands provide enhanced analysis (marked with 🤖)
+- All commands are prefixed with their category (e.g., `/network`, `/governance`)
+
+## 🔗 Quick Links
+[Dashboard] | [Governance] | [Documentation]
+
+---
+
+## 🚀 Getting Started
 
 ```bash
+# Clone repository
 git clone git@github.com:Tonyflam/ICPulse.git
 cd ICPulse
-```
 
-**Install dependencies**
-
-```bash
+# Install dependencies
 npm install
-```
 
-**Configure environment variables**
+# Configure environment
+cp .env.example .env
+# Edit .env with your credentials
 
-Fill in the following variables in .env:
-
-```env
-OPENCHAT_PUBLIC_KEY=your_public_key_here
-OPENCHAT_PRIVATE_KEY=your_private_key_here
-GROK_API_KEY=your_grok_ai_key_here
-STORAGE_INDEX_CANISTER=canister_id_here
-IC_HOST=https://icp0.io
-```
-
-**Start the bot**
-
-```bash
+# Run the bot
 npm run dev
-```
-
-
-## 🧪 Example Commands
-```bash
-/icp_price               # Get latest ICP/USD price
-/cycles_calc 5          # Convert 5 ICP into Cycles
-/daily_report           # AI governance digest
-/summarize_proposal 123 # Deep analysis of Proposal #123
-/neuron_info 456789     # Voting stats for neuron 456789
-/node_map               # View global node locations
-
-
