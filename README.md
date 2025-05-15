@@ -1,222 +1,135 @@
 # ⚡ ICPulse - The Intelligent Internet Computer Command Center ⚡
 
-Your AI-powered dashboard for everything ICP. Monitor real-time network vitals, automate governance decisions, and analyze on-chain data with cutting-edge AI insights. Built for developers, node operators, and governance participants who demand precision at blockchain speed.
+ICPulse is your all-in-one AI-powered dashboard for the Internet Computer ecosystem. Monitor real-time network vitals, automate governance insights, analyze on-chain activity, and manage neuron voting with advanced analytics. Whether you're a developer, node operator, or governance participant, ICPulse gives you the tools to operate at blockchain speed.
+
+**Category**: Productivity & Utility  
+**Platform**: OpenChat  
 
 ---
 
-## ✨ Command Categories ✨
+## 🚀 Features Overview
 
-### 🌐 NETWORK COMMANDS
-_Network monitoring commands: status, visualization, and analytics_
+ICPulse integrates deeply with Internet Computer APIs to provide real-time insights and intelligent tools across five categories:
 
-**💓 /network network_status**  
-ICP Network Status  
-TPS, node health, memory usage  
-`/network network_status`
+### ✨ Command Categories
 
-**🗺️ /network node_map**  
-Global ICP nodes visualization  
-Interactive map of node locations  
-`/network node_map`
+#### 🌐 LIVE NETWORK MONITORING  
+_Real-time intelligence and infrastructure health._
 
-**🔄 /network subnet_versions**  
-Subnet Replica version tracking  
-Track versions across subnets  
-`/network subnet_versions`
+- `/network network_status` – Network pulse: TPS, node health, memory usage  
+- `/network node_map` – Global node distribution (interactive map)  
+- `/network subnet_versions` – Subnet replica version tracking  
+- `/network node_providers` – Node providers by organization  
+- `/network energy_stats` – Energy efficiency metrics (ICP vs legacy chains)  
+- `/network subnet_lookup [subnet_id]` – Subnet detail lookup  
 
-**🏢 /network node_providers**  
-ICP Node Providers distribution  
-Breakdown by provider organization  
-`/network node_providers`
+#### 🤖 AI-POWERED GOVERNANCE  
+_Smart summaries and deep insights to support informed voting._
 
-**🌱 /network energy_stats**  
-ICP Energy efficiency report  
-Energy consumption metrics  
-`/network energy_stats`
+- `/governance daily_report` – AI-curated daily digest of proposals 🧠  
+- `/governance summarize_proposal [proposal_id]` – Deep AI analysis of any proposal  
+- `/governance proposals` – Browse active governance proposals  
+- `/governance proposal_stats [proposal_id]` – Voting power and participation breakdown  
 
-**🔍 /network subnet_lookup**  
-Subnet details lookup  
-Get detailed subnet information  
-`/network subnet_lookup [subnet_id]`
+#### 💰 TOKEN COMMAND CENTER  
+_Market intelligence and tokenomics._
 
----
+- `/tokens icp_price` – Live ICP/USD + ICP/XDR price  
+- `/tokens ckbtc_price` – Live ckBTC/USD peg info  
+- `/tokens icp_supply` – Circulating supply of ICP  
+- `/tokens cycles_calc [amount]` – Convert ICP → Cycles (USD adjusted)  
+- `/tokens icrc_supply [ledger_id]` – ICRC token supply (e.g., ckETH)  
+- `/tokens icrc_holders [ledger_id]` – Top holders of ICRC tokens  
 
-### 🏛️ GOVERNANCE COMMANDS
-_Governance-related commands: proposals, AI analysis, and voting tools_
+#### 🧠 NEURON MANAGEMENT  
+_Optimize and assess neuron participation._
 
-**🗳️ /governance proposals**  
-List active proposals  
-Browse governance proposals  
-`/governance proposals`
+- `/neurons neuron_info [neuron_id]` – Neuron voting power, dissolve delay, status  
+- `/neurons neuron_health_check [neuron_id]` – Full neuron diagnostics  
+- `/neurons maturity_modulation` – View current rewards modulation factor  
 
-**📰 /governance daily_report**  
-Daily Governance Report  
-AI-curated summary of proposals  
-`/governance daily_report`  
-🤖 AI-Powered
+#### ⚙️ DEVELOPER TOOLS  
+_Powerful utilities for canisters, subnets, and identity insights._
 
-**🔍 /governance summarize_proposal**  
-Summarize a proposal  
-AI analysis of proposal content  
-`/governance summarize_proposal [proposal_id]`  
-🤖 AI-Powered
+- `/dev canister_search [canister_id]` – Canister status, controllers, module hash  
+- `/dev canister_growth` – Historical growth and deployment trends  
+- `/network subnet_lookup [subnet_id]` – Subnet configuration and nodes  
+- `/dev ii_users` – Internet Identity growth metrics  
 
-**📊 /governance proposal_stats**  
-Proposal Statistics  
-Voting analytics and metrics  
-`/governance proposal_stats [proposal_id]`
+#### 🌱 SNS ECOSYSTEM  
+_Explore decentralized SNS DAOs and token distributions._
 
----
+- `/sns sns_list` – Directory of live SNS DAOs  
+- `/sns sns_proposals [sns_id]` – Active proposals within a given SNS  
+- `/tokens icrc_supply [ledger_id]` – ICRC token supply  
+- `/tokens icrc_holders [ledger_id]` – Top token holders for an SNS  
 
-### 💰 TOKEN COMMANDS
-_Token management commands: prices, supply, and conversions_
+#### 📊 COMPARATIVE ANALYTICS  
+_Side-by-side benchmarking._
 
-**📈 /tokens icp_price**  
-Real-time ICP price  
-Current ICP/USD and ICP/XDR rates  
-`/tokens icp_price`
+- `/analytics icp_vs_eth` – Compare metrics: TPS, energy, fees vs Ethereum  
+- `/analytics icp_stats` – Chain-level activity: burns, transactions, etc.  
 
-**₿ /tokens ckbtc_price**  
-ckBTC/USD price  
-Current ckBTC exchange rate  
-`/tokens ckbtc_price`
+#### 📚 FAQ & RESOURCES  
+Helpful information for understanding ICP and the ecosystem.
 
-**🔄 /tokens icp_supply**  
-ICP Circulating supply  
-Current supply metrics  
-`/tokens icp_supply`
-
-**🧮 /tokens cycles_calc**  
-ICP to Cycles converter  
-Convert ICP amount to cycles  
-`/tokens cycles_calc [amount]`
-
-**📊 /tokens icrc_supply**  
-ICRC token supply  
-Check supply of ICRC tokens  
-`/tokens icrc_supply [ledger_id]`
-
-**👛 /tokens icrc_holders**  
-ICRC Top wallets  
-View top token holders  
-`/tokens icrc_holders [ledger_id]`
+- `/icp_faq [category]` – FAQs by category: general, governance, sns, neurons, resources  
 
 ---
 
-### 🧠 NEURON COMMANDS
-_Neuron management commands: info, rewards, and health checks_
+## 🔍 Quick Reference
 
-**🧬 /neurons neuron_info**  
-Neuron Voting power/status  
-Detailed neuron information  
-`/neurons neuron_info [neuron_id]`
-
-**⚡ /neurons maturity_modulation**  
-Current ICP maturity modulation  
-Rewards multiplier status  
-`/neurons maturity_modulation`
-
-**🧠 /neurons neuron_health_check**  
-Neuron health audit  
-Health check and recommendations  
-`/neurons neuron_health_check [neuron_id]`
+| Category            | Sample Commands                                            |
+|---------------------|-----------------------------------------------------------|
+| Network Monitoring  | `/network network_status`, `/network node_map`            |
+| Governance Tools    | `/governance proposals`, `/governance summarize_proposal 12345` |
+| Token Data          | `/tokens icp_price`, `/tokens cycles_calc 10`             |
+| Neuron Management   | `/neurons neuron_info 123456789`, `/neurons maturity_modulation` |
+| Developer Tools     | `/dev canister_search xyzzy-12345`, `/network subnet_lookup subnet_id` |
+| SNS Tools           | `/sns sns_list`, `/tokens icrc_holders abcde-67890`       |
+| Analytics           | `/analytics icp_vs_eth`, `/analytics icp_stats`           |
 
 ---
 
-### 🛠️ DEVELOPER COMMANDS
-_Developer tools: canister forensics, deployment trends, and II stats_
-
-**🔎 /dev canister_search**  
-Find Canister Info  
-Canister details and metadata  
-`/dev canister_search [canister_id]`
-
-**📈 /dev canister_growth**  
-Canister Growth Statistics  
-Historical growth metrics  
-`/dev canister_growth`
-
-**👤 /dev ii_users**  
-Internet Identity stats  
-User growth and metrics  
-`/dev ii_users`
-
----
-
-### 🌱 SNS COMMANDS
-_SNS-related commands: list DAOs, proposals, and documentation_
-
-**📋 /sns sns_list**  
-List all live SNS DAOs  
-Active DAOs with basic info  
-`/sns sns_list`
-
-**🗳️ /sns sns_proposals**  
-Get DAO proposals  
-View proposals for a specific DAO  
-`/sns sns_proposals [sns_id]`
-
----
-
-### 📊 ANALYTICS COMMANDS
-_Comparative insights: Ethereum metrics and chain activity trends_
-
-**⚖️ /analytics icp_vs_eth**  
-ICP vs Ethereum metrics  
-Comparative blockchain metrics  
-`/analytics icp_vs_eth`
-
-**📈 /analytics icp_stats**  
-Chain activity trends  
-ICP network statistics  
-`/analytics icp_stats`
-
----
-
-### ❓ FAQ COMMANDS
-_Frequently asked questions about ICP_
-
-**❓ /icp_faq**  
-ICP Frequently Asked Questions  
-Answers to common questions  
-`/icp_faq [category]`  
-Categories: general, governance, sns, neurons, resources
-
----
-
-### 🛠️ UTILITY COMMANDS
-_General utility commands_
-
-**ℹ️ /help**  
-Show this help message  
-Display all available commands  
-`/help`
-
----
-
-## 💡 Usage Notes:
-- Commands with `[parameter]` require input (e.g., `/neurons neuron_info 12345`)
-- AI-powered commands provide enhanced analysis (marked with 🤖)
-- All commands are prefixed with their category (e.g., `/network`, `/governance`)
-
-## 🔗 Quick Links
-[Dashboard] | [Governance] | [Documentation]
-
----
-
-## 🚀 Getting Started
+### ⚙️ Installation Guide
+**Clone the repository**
 
 ```bash
-# Clone repository
 git clone git@github.com:Tonyflam/ICPulse.git
 cd ICPulse
+```
 
-# Install dependencies
+
+**Install dependencies**
+
+```bash
 npm install
+```
 
-# Configure environment
-cp .env.example .env
-# Edit .env with your credentials
+**Configure environment variables**
 
-# Run the bot
+Fill in the following variables in .env:
+
+```env
+OPENCHAT_PUBLIC_KEY=your_public_key_here
+OPENCHAT_PRIVATE_KEY=your_private_key_here
+GROK_API_KEY=your_grok_ai_key_here
+STORAGE_INDEX_CANISTER=canister_id_here
+IC_HOST=https://icp0.io
+```
+
+**Start the bot**
+
+```bash
 npm run dev
+```
+
+
+## 🧪 Example Commands
+```bash
+/tokens icp_price                # Get latest ICP/USD price
+/tokens cycles_calc 5           # Convert 5 ICP into Cycles
+/governance daily_report        # AI governance digest
+/governance summarize_proposal 123  # Deep analysis of Proposal #123
+/neurons neuron_info 456789     # Voting stats for neuron 456789
+/network node_map               # View global node locations
